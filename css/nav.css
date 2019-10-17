@@ -62,7 +62,7 @@ h1{
 {
 	.sepValores{justify-content: center;}
 	.box{
-		width: 85%;
+		width: 100%;
 	}
 	.box p{
 		font-size: 20px;
