@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:900&display=swap');
+
+*{
+	font-family: 'Kanit', sans-serif;
+}
+
+.portada{
+	background-image: url(../img/portada.jpg);
+	background-position: bottom;
+	background-size: cover;
+	filter: opacity(0.7);
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: -10; /*Foto por detras de todo*/
+}
+
+h1{ font-size: 60px;}
+.h1Color{color: #2E86C1;}
+
+.encabezado{margin: 20px 30px;}
+
+.navStyle{color: white;}
+
+.marginPortada{
+	margin-top: 78vh;
+	text-align: center;
+}
+.sepValores{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+.box{
+	background-color: rgba(46, 134, 193,0.8);
+	border-radius: 10px;
+	padding: 2% 2%;
+	width: 30%;
+}
+	.box h2{
+		padding-bottom: 10px;
+	}
