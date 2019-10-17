@@ -61,11 +61,18 @@ h1{
 @media screen and (max-width: 559px) and (min-width: 0px)
 {
 	.sepValores{justify-content: center;}
-	.box{width: 80%;}
+	.box{
+		width: 85%;
+	}
+	.box p{
+		font-size: 20px;
+	}
 }
 
 /*Dispositivos Medianos*/
 @media screen and (max-width: 1000px) and (min-width: 560px){
 	.sepValores{justify-content: center;}
-	.box{width: 70%;}
+	.box{
+		width: 95%;
+	}
 }
