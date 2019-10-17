@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:900|Roboto&display=swap');
 
 *{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .portada{
@@ -16,10 +16,20 @@
 	z-index: -10; /*Foto por detras de todo*/
 }
 
-h1{ font-size: 60px;}
-.h1Color{color: #2E86C1;}
-
-.encabezado{margin: 20px 30px;}
+h1{ 
+	font-size: 60px;
+	font-family: 'Kanit', sans-serif;
+}
+.h1Color
+{
+	color: #2E86C1;
+	font-family: 'Kanit', sans-serif;
+}
+.encabezado{
+	position: sticky;
+	top:0px;
+	margin: 20px 30px;
+}
 
 .navStyle{color: white;}
 
@@ -33,11 +43,29 @@ h1{ font-size: 60px;}
 	flex-wrap: wrap;
 }
 .box{
-	background-color: rgba(46, 134, 193,0.8);
+	background-color: rgba(71, 71, 71, 0.8);
 	border-radius: 10px;
 	padding: 2% 2%;
 	width: 30%;
+	color: white;
+	margin-bottom: 40px;
 }
 	.box h2{
 		padding-bottom: 10px;
+		font-family: 'Kanit', sans-serif;
+		color: #2E86C1;
 	}
+
+
+/*Responsive Dispositivos Pequeños*/
+@media screen and (max-width: 559px) and (min-width: 0px)
+{
+	.sepValores{justify-content: center;}
+	.box{width: 80%;}
+}
+
+/*Dispositivos Medianos*/
+@media screen and (max-width: 1000px) and (min-width: 560px){
+	.sepValores{justify-content: center;}
+	.box{width: 70%;}
+}
