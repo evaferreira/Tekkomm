@@ -9,25 +9,13 @@ a{
 	color: black;
 }
 
-.portada{
-	background-image: url(../img/portada.jpg);
-	background-position: bottom;
-	background-size: cover;
-	filter: opacity(0.7);
-	height: 710px;
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	z-index: -10; /*Foto por detras de todo*/
-}
-
 h1{ 
 	font-size: 60px;
 	font-family: 'Kanit', sans-serif;
 }
 .titulo:hover{
 	text-decoration: none;
-	color: black;	
+	color: black;
 }
 .h1Color
 {
@@ -37,28 +25,10 @@ h1{
 .encabezado{
 	position: sticky;
 	top:0px;
-	padding: 10px 30px;
-	/*background-color: rgb(255,255,255);*/
+	padding: 3px 30px;
 }
-
-.navStyle{color: white;}
 
 .marginPortada{
 	margin-top: 450px;
 	text-align: center;
 }
-
-.box{
-	background-color: rgb(71, 71, 71);
-	border-radius: 10px;
-	padding: 2% 2%;
-	width: 30%;
-	color: white;
-	margin-bottom: 40px;
-	box-shadow: 10px 10px 20px 0px #090909;
-}
-	.box h2{
-		padding-bottom: 20px;
-		font-family: 'Kanit', sans-serif;
-		color: #2E86C1;
-	}

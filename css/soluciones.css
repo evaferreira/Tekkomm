@@ -1,10 +1,43 @@
-.corte{
-	background-color: red;
-	transform: skew(-20deg,0deg);
-	width: 60px;
-	height: 100%;
 
-	position: absolute;
-	top:0;
-	left:700px;
+footer{
+	background-color: lightgrey;
+	height: 200px;
+}
+
+body{
+	background-color: #FAFAFA;
+}
+
+.encabezado{
+	background-color: white;
+	z-index: 10;
+}
+
+
+.imgFranja-1{
+	background-image: url(../img/mar.jpg);
+	background-size: cover;
+	width: 100%;
+	border-right: solid 30px black;
+	transform: skew(-5deg,0deg);
+	left: -10px;
+}
+
+.imgFranja-2{
+	background-image: url(../img/mar.jpg);
+	background-size: cover;
+	width: 100%;
+	border-left: solid 30px black;
+	transform: skew(5deg,0deg);
+	right: -10px;
+}
+
+.borderTop{
+	border-top: solid 20px white;
+	border-bottom: solid 20px white;
+}
+
+.navStyle{
+	padding-top: 20px;
+	font-size: 18px;
 }
