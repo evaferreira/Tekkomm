@@ -9,11 +9,16 @@
 		<!-- DEPENDECIAS DE BOOTSTRAP -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+		<!-- dependencias FontAwesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/contacto.css">
 	</head>
 
 	<body>
+		<div class="fondo"></div>
+
 		<!-- Barra Inicial de la Pagina -->
 		<div class="container-fluid encabezado">
 			<div class="row">
@@ -42,36 +47,125 @@
 				</div>
 			</div>
 		</div>
-		
-		<!-- Contenedor del Formulario-->
-		<div class="container">
-			<form>
-  				<div class="row">
-    				<div class="col">
-      					<input type="text" class="form-control" placeholder="Nombres">
-    				</div>
-    				<div class="col">
-      					<input type="text" class="form-control" placeholder="Apellido">
-    				</div>
-  				</div>
-				
-			
-  				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-
-  				<div class="row">
-    				<div class="col">
-      					<input type="text" class="form-control" placeholder="Telefono">
-    				</div>
-    				<div class="col">
-      					<input type="text" class="form-control" placeholder="Ciudad">
-    				</div>
-  				</div>
-
-				<textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-
-  				<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>
-			</form>					
+		<!-- Titulo de la seccion-->
+		<div class="container p-5">
+			<div class="d-flex justify-content-center titulo">
+				<h2>PÓNGASE EN CONTACTO</h2>
+			</div>
 		</div>
 
+		<!-- Contenedor del Formulario-->
+		<div class="container d-flex justify-content-center">
+			<div class="w-50">
+					<form class="formulario">
+  						<div class="row justify-content-between m-2">
+    						<div class="col-6 p-0">
+      							<input type="text" placeholder="Nombres">
+    						</div>
+    						<div class="col-5 p-0">
+      							<input type="text" placeholder="Apellido">
+    						</div>
+  						</div>
+				
+						<div class="row m-3">
+  							<input type="email" id="exampleFormControlInput1" placeholder=	"name@example.com">
+						</div>
+	
+  						<div class="row justify-content-between m-3">
+    						<div class="col-5 p-0">
+      							<input type="text" placeholder="Telefono">
+    						</div>
+    						<div class="col-6 p-0">
+      							<input type="text" placeholder="Ciudad">
+    						</div>
+  						</div>
+					
+						<div class="row m-3">
+							<textarea id="campotexto" placeholder="Ingrese Mensaje..."></textarea>	
+						</div>
+					
+						<div class="row justify-content-end m-3">
+							<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>	
+						</div>
+					</form>
+			</div>		
+		</div>
+	
+		<!-- Informacion de la Empresa -->
+		<div class="container">
+			<div class="row justify-content-between p-5 m-5">
+				<!-- Elemento 1 -->
+				<div class="col-4">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center icon">
+							<i class="fas fa-globe-americas"></i>
+						</div>				
+						
+						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+							<h3>Visitanos</h3>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center">
+							<p class="center">Nos Encontrarnos en un punto estrategico de la ciudad de Madrid</p>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center">
+							<p class="center" style="color: #2E86C1;">Calle de Andres Mellado, 9, 28015 Madrid, España</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Elemento 2 -->
+				<div class="col-4">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center icon">
+							<i class="fas fa-phone-alt"></i>
+						</div>				
+						
+						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+							<h3>Llamanos</h3>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center p-2">
+							<p class="center">Horario de Atención de 9hs a 18hs</p>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center p-2">
+							<p style="color: #2E86C1;">tel:1234-5678</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Elemento 3-->
+				<div class="col-4">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center icon">
+							<i class="fas fa-envelope-open-text"></i>	
+						</div>				
+						
+						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+							<h3>Mensajes</h3>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center">
+							<p class="center">Envianos mensajes al sigueinte correo, respondemos a la brevedad.</p>
+						</div>
+
+						<div class="col-12 d-flex justify-content-center">
+							<p style="color: #2E86C1;">consultas.tekkomm@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<!-- Mapa de Google-->
+		<div class="container-fluid m-0 p-0">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8591.946212473254!2d-3.705631000822994!3d40.41523678111415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses!2sar!4v1571527751688!5m2!1ses!2sar" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>	
+		</div>
+
+		<footer>
+			
+		</footer>
 	</body>
 </html>
