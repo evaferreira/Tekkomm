@@ -17,7 +17,7 @@
 	</head>
 
 	<body>
-		<div class="fondo"></div>
+		<!-- <div class="fondo"></div>-->
 
 		<!-- Barra Inicial de la Pagina -->
 		<div class="container-fluid encabezado">
@@ -47,50 +47,52 @@
 				</div>
 			</div>
 		</div>
-		<!-- Titulo de la seccion-->
-		<div class="container p-5">
-			<div class="d-flex justify-content-center titulo">
-				<h2>PÓNGASE EN CONTACTO</h2>
+
+		<div class="fondo">
+			<!-- Titulo de la seccion-->
+			<div class="container p-5">
+				<div class="d-flex justify-content-center titulo">
+					<h2>PÓNGASE EN CONTACTO</h2>
+				</div>
+			</div>
+
+			<!-- Contenedor del Formulario-->
+			<div class="container d-flex justify-content-center">
+				<div class="w-50">
+						<form class="formulario">
+  							<div class="row justify-content-between m-2">
+    							<div class="col-6 p-0">
+      								<input type="text" placeholder="Nombres">
+    							</div>
+    							<div class="col-5 p-0">
+      								<input type="text" placeholder="Apellido">
+    							</div>
+  							</div>
+				
+							<div class="row m-3">
+  								<input type="email" id="exampleFormControlInput1" placeholder=	"name@example.com">
+							</div>
+	
+  							<div class="row justify-content-between m-3">
+    							<div class="col-5 p-0">
+      								<input type="text" placeholder="Telefono">
+    							</div>
+    							<div class="col-6 p-0">
+      								<input type="text" placeholder="Ciudad">
+    							</div>
+  							</div>
+					
+							<div class="row m-3">
+								<textarea id="campotexto" placeholder="Ingrese Mensaje..."></textarea>	
+							</div>
+					
+							<div class="row justify-content-end m-3">
+								<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>	
+							</div>
+						</form>
+				</div>		
 			</div>
 		</div>
-
-		<!-- Contenedor del Formulario-->
-		<div class="container d-flex justify-content-center">
-			<div class="w-50">
-					<form class="formulario">
-  						<div class="row justify-content-between m-2">
-    						<div class="col-6 p-0">
-      							<input type="text" placeholder="Nombres">
-    						</div>
-    						<div class="col-5 p-0">
-      							<input type="text" placeholder="Apellido">
-    						</div>
-  						</div>
-				
-						<div class="row m-3">
-  							<input type="email" id="exampleFormControlInput1" placeholder=	"name@example.com">
-						</div>
-	
-  						<div class="row justify-content-between m-3">
-    						<div class="col-5 p-0">
-      							<input type="text" placeholder="Telefono">
-    						</div>
-    						<div class="col-6 p-0">
-      							<input type="text" placeholder="Ciudad">
-    						</div>
-  						</div>
-					
-						<div class="row m-3">
-							<textarea id="campotexto" placeholder="Ingrese Mensaje..."></textarea>	
-						</div>
-					
-						<div class="row justify-content-end m-3">
-							<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>	
-						</div>
-					</form>
-			</div>		
-		</div>
-	
 		<!-- Informacion de la Empresa -->
 		<div class="container">
 			<div class="row justify-content-between p-5 m-5">

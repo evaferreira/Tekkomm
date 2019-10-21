@@ -10,13 +10,9 @@ footer{
 }
 
 .fondo{
-	background-image: url(../img/contacto.jpg);
-	position: absolute;
-	filter: opacity(0.6);
+	background-image: url(../img/contacto3.jpg);
 	z-index: -10;
-	top:0px;
 	width: 100%;
-	height: 100vh;
 }
 
 .navStyle{
