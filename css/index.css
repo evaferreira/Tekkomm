@@ -60,7 +60,7 @@
 		font-size: 40px;
 	}
 	.box p{
-		font-size: 30px;
+		font-size: 1rem;
 	}
 }
 
@@ -69,12 +69,12 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	.box h3{
+	/*.box h3{
 		font-size: 40px;
 	}
 	.box p{
 		font-size: 16px;
-	}
+	}*/
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
