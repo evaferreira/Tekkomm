@@ -27,3 +27,7 @@ h1{
 	top:0px;
 	padding: 3px 30px;
 }
+
+.nav-item a{
+	font-size: 1.3rem;
+}

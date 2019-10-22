@@ -17,6 +17,10 @@
 	z-index: -10; /*Foto por detras de todo*/
 }
 
+.encabezado{
+	z-index: 100;
+}
+
 .marginPortada{
 	margin-top: 450px;
 	text-align: center;
@@ -35,6 +39,10 @@
 		color: #2E86C1;
 		font-family: 'Kanit', sans-serif;
 		padding-bottom: 20px;
+		font-size: 2rem;
+	}
+	.box p{
+		font-size: 1rem;
 	}
 
 .logoEmpresa{
@@ -52,30 +60,3 @@
 	font-size: 45px;
 	font-family: 'Kanit', sans-serif;
 }
-
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px){
-	.box h3{
-		font-size: 40px;
-	}
-	.box p{
-		font-size: 1rem;
-	}
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-	/*.box h3{
-		font-size: 40px;
-	}
-	.box p{
-		font-size: 16px;
-	}*/
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
