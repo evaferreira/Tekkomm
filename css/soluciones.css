@@ -15,7 +15,7 @@ body{
 
 
 .imgFranja-1{
-	background-image: url(../img/mar.jpg);
+	background-image: url(../img/proteccion.jpg);
 	background-size: cover;
 	width: 100%;
 	border-right: solid 30px black;
@@ -24,7 +24,7 @@ body{
 }
 
 .imgFranja-2{
-	background-image: url(../img/mar.jpg);
+	background-image: url(../img/empleados.jpg);
 	background-size: cover;
 	width: 100%;
 	border-left: solid 30px black;
