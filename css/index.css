@@ -17,6 +17,11 @@
 	z-index: -10; /*Foto por detras de todo*/
 }
 
+.marginPortada{
+	margin-top: 450px;
+	text-align: center;
+}
+
 .box{
 	background-color: rgb(71, 71, 71);
 	border-radius: 10px;
@@ -26,8 +31,24 @@
 	padding: 2% 2%;
 	width: 30%;
 }
-	.box h2{
+	.box h3{
 		color: #2E86C1;
 		font-family: 'Kanit', sans-serif;
 		padding-bottom: 20px;
 	}
+
+.logoEmpresa{
+	text-align: center;
+}
+.logoEmpresa img{
+	width: 60%;
+	filter: grayscale(100%);
+}
+.logoEmpresa img:hover{
+	filter: grayscale(0%);
+}
+
+.subtitulo{
+	font-size: 45px;
+	font-family: 'Kanit', sans-serif;
+}
