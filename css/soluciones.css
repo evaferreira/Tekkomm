@@ -45,3 +45,19 @@ body{
 .pLeft{
 	padding-left: 20px;
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+	.pLeft p{
+		font-size: 2rem;
+	}
+	
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.pLeft p{
+		font-size: 1rem;
+	}
+}
+
