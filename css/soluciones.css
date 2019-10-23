@@ -15,6 +15,19 @@ h2{
 	z-index: 10;
 }
 
+.imgSec1{
+	background: url("../img/empleados.jpg");
+}
+.imgSec2{
+	background: url("../img/empleados.jpg");
+}
+.imgSec3{
+	background: url("../img/empleados.jpg");
+}
+.imgSec4{
+	background: url("../img/empleados.jpg");
+}
+
 .pLeft{padding: 0px 40px;}
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -34,7 +47,22 @@ h2{
 		font-size: 1.6rem;
 	}
 	h2{
+		text-align: center;
 		font-size: 3rem;
+		padding: 1rem 0px;
+	}
+
+	.box{
+		width: 80%;
+		margin: 4rem auto;
+	}
+	.boxImg{
+		display: none;
+	}
+	.boxImg-Md{
+		width: 100%;
+		background-size: cover;
+		height: 400px;
 	}
 }
 
@@ -86,14 +114,17 @@ h2{
     	content: " ";
 	}
 
-	.boxImg{
+	.boxImg-Lg{
 		width: 60%;
-		background: url("../img/empleados.jpg");
 		background-size: cover;
 		z-index: 1;
 	}
-	.boxImg img{
+	.boxImg-Lg img{
 		width: 100%;
+	}
+	/*Clase Pantalla Mediana - Deshabilitado.*/
+	.boxImg-Md{
+		display: none;
 	}
 }
 
