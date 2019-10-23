@@ -52,6 +52,10 @@ body{
 	.pLeft p{
 		font-size: 2rem;
 	}
+
+	.pleft h2{
+		font-size: 4rem;
+	}
 	
 }
 /*Large devices (desktops, 992px and up)*/
