@@ -1,35 +1,45 @@
 
-footer{
-	background-color: lightgrey;
-	height: 200px;
-}
+/*body {background-color: #FAFAFA;}*/
 
-body{
-	background-color: #FAFAFA;
-}
+img {width: 100%;}
 
 .encabezado{
 	background-color: white;
 	z-index: 10;
 }
 
-
-.imgFranja-1{
-	background-image: url(../img/proteccion.jpg);
-	background-size: cover;
+.box{
+	display: flex;
 	width: 100%;
-	border-right: solid 30px black;
-	transform: skew(-5deg,0deg);
-	left: -10px;
+	height: 500px;
 }
 
-.imgFranja-2{
-	background-image: url(../img/empleados.jpg);
+.boxText{
+	width: 50%;
+	box-sizing: border-box;
+	z-index: 3;
+}
+
+.boxImg{
+	height: : 500px;
+	width: 50%;
+	background: url("../img/empleados.jpg");
 	background-size: cover;
+	z-index: 1;
+}
+.boxImg img{
 	width: 100%;
-	border-left: solid 30px black;
-	transform: skew(5deg,0deg);
-	right: -10px;
+}
+
+.boxSkew{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%) skew(-10deg, 0deg);
+	width: 50%;
+	height: 500px;
+	z-index: 2;
+	background-color: #FAFAFA;	
 }
 
 .borderTop{
@@ -43,7 +53,7 @@ body{
 }
 
 .pLeft{
-	padding-left: 20px;
+	padding: 10px 30px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
