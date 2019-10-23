@@ -7,21 +7,50 @@ img {width: 100%;}
 	background-color: white;
 	z-index: 10;
 }
-
+/*Efecto de Inclinado Imagen Derecha*/
 .box{
 	display: flex;
 	width: 100%;
-	height: 500px;
+}
+.boxTextIzq{
+	position: relative;
+	width: 50%;
+	z-index: 3;
+	background-color: #FAFAFA;
+}
+.boxTextIzq::after{
+	position: absolute;
+    right: 0;
+    height: 100%;
+    background: #FAFAFA;
+    transform: translate3d(0, 0, 0) skew(-10deg);
+    top: 0;
+    transform-origin: bottom;
+    width: 100%;
+    z-index: -1;
+    content: " ";
 }
 
-.boxText{
+.boxTextDer{
+	position: relative;
 	width: 50%;
-	box-sizing: border-box;
 	z-index: 3;
+	background-color: #FAFAFA;
+}
+.boxTextDer::after{
+	position: absolute;
+    right: 0;
+    height: 100%;
+    background: #FAFAFA;
+    transform: translate3d(0, 0, 0) skew(10deg);
+    top: 0;
+    transform-origin: bottom;
+    width: 100%;
+    z-index: -1;
+    content: " ";
 }
 
 .boxImg{
-	height: : 500px;
 	width: 50%;
 	background: url("../img/empleados.jpg");
 	background-size: cover;
@@ -29,17 +58,6 @@ img {width: 100%;}
 }
 .boxImg img{
 	width: 100%;
-}
-
-.boxSkew{
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%) skew(-10deg, 0deg);
-	width: 50%;
-	height: 500px;
-	z-index: 2;
-	background-color: #FAFAFA;	
 }
 
 .borderTop{
@@ -53,7 +71,7 @@ img {width: 100%;}
 }
 
 .pLeft{
-	padding: 10px 30px;
+	padding: 0px 40px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
