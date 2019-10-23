@@ -1,67 +1,18 @@
 
-/*body {background-color: #FAFAFA;}*/
-
 img {width: 100%;}
 
 h2{
 	margin: 1rem 1.5rem;
 }
 
-.encabezado{
-	background-color: white;
-	z-index: 10;
-}
-/*Efecto de Inclinado Imagen Derecha*/
-.box{
-	display: flex;
-	width: 100%;
-	margin: 2rem 0px;
-}
-.boxTextIzq, .boxTextDer{
-	position: relative;
-	width: 40%;
-	z-index: 3;
-	background-color: #FAFAFA;
-}
-.boxTextIzq::after{
-	position: absolute;
-    right: 0;
-    height: 100%;
-    background: #FAFAFA;
-    transform: translate3d(0, 0, 0) skew(-10deg);
-    top: 0;
-    transform-origin: bottom;
-    width: 100%;
-    z-index: -1;
-    content: " ";
-}
-
-.boxTextDer::after{
-	position: absolute;
-    right: 0;
-    height: 100%;
-    background: #FAFAFA;
-    transform: translate3d(0, 0, 0) skew(10deg);
-    top: 0;
-    transform-origin: bottom;
-    width: 100%;
-    z-index: -1;
-    content: " ";
-}
-
-.boxImg{
-	width: 60%;
-	background: url("../img/empleados.jpg");
-	background-size: cover;
-	z-index: 1;
-}
-.boxImg img{
-	width: 100%;
-}
-
 .navStyle{
 	padding-top: 20px;
 	font-size: 18px;
+}
+
+.encabezado{
+	background-color: white;
+	z-index: 10;
 }
 
 .pLeft{padding: 0px 40px;}
@@ -84,6 +35,54 @@ h2{
 	}
 	h2{
 		font-size: 3rem;
+	}
+
+	/*Efecto de Inclinado Imagen Derecha*/
+	.box{
+		display: flex;
+		width: 100%;
+		margin: 2rem 0px;
+	}
+	.boxTextIzq, .boxTextDer{
+		position: relative;
+		width: 40%;
+		z-index: 3;
+		background-color: #FAFAFA;
+	}
+	.boxTextIzq::after{
+		position: absolute;
+	    right: 0;
+	    height: 100%;
+	    background: #FAFAFA;
+    	transform: translate3d(0, 0, 0) skew(-10deg);
+    	top: 0;
+    	transform-origin: bottom;
+    	width: 100%;
+    	z-index: -1;
+	    content: " ";
+	}
+
+	.boxTextDer::after{
+		position: absolute;
+    	right: 0;
+    	height: 100%;
+    	background: #FAFAFA;
+    	transform: translate3d(0, 0, 0) skew(10deg);
+    	top: 0;
+    	transform-origin: bottom;
+    	width: 100%;
+    	z-index: -1;
+    	content: " ";
+	}
+
+	.boxImg{
+		width: 60%;
+		background: url("../img/empleados.jpg");
+		background-size: cover;
+		z-index: 1;
+	}
+	.boxImg img{
+		width: 100%;
 	}
 }
 
