@@ -3,6 +3,8 @@
 
 img {width: 100%;}
 
+h2{margin: 20px 30px;}
+
 .encabezado{
 	background-color: white;
 	z-index: 10;
@@ -11,10 +13,11 @@ img {width: 100%;}
 .box{
 	display: flex;
 	width: 100%;
+	margin: 20px 0px;
 }
-.boxTextIzq{
+.boxTextIzq, .boxTextDer{
 	position: relative;
-	width: 50%;
+	width: 40%;
 	z-index: 3;
 	background-color: #FAFAFA;
 }
@@ -31,12 +34,6 @@ img {width: 100%;}
     content: " ";
 }
 
-.boxTextDer{
-	position: relative;
-	width: 50%;
-	z-index: 3;
-	background-color: #FAFAFA;
-}
 .boxTextDer::after{
 	position: absolute;
     right: 0;
@@ -51,18 +48,13 @@ img {width: 100%;}
 }
 
 .boxImg{
-	width: 50%;
+	width: 60%;
 	background: url("../img/empleados.jpg");
 	background-size: cover;
 	z-index: 1;
 }
 .boxImg img{
 	width: 100%;
-}
-
-.borderTop{
-	border-top: solid 20px white;
-	border-bottom: solid 20px white;
 }
 
 .navStyle{
