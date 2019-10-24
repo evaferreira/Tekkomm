@@ -48,13 +48,17 @@ h2{margin: 1rem 1.5rem;}
 		text-align: center;
 		font-size: 3rem;
 		padding: 1rem 0px;
+		margin: 0px auto;
 	}
 
 	.box{
-		width: 100%;
+		width: 80%;
 		padding-bottom: 4rem;
-		margin: 4rem 0rem;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 4rem;
 		background: #EAEAEA;
+		box-shadow: 10px 10px 10px 0px #CDCDCD;
 	}
 	.boxImg{
 		display: none;
