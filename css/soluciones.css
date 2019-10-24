@@ -3,24 +3,19 @@ img {width: 100%;}
 
 h2{margin: 1rem 1.5rem;}
 
-.navStyle{
-	padding-top: 20px;
-	font-size: 18px;
-}
-
 .encabezado{
 	background-color: white;
 	z-index: 10;
 }
 
 .imgSec1{
-	background: url("../img/empleados.jpg");
+	background: url("../img/estructura.jpg");
 }
 .imgSec2{
-	background: url("../img/empleados.jpg");
+	background: url("../img/proteccion.jpg");
 }
 .imgSec3{
-	background: url("../img/empleados.jpg");
+	background: url("../img/mejoreRed.jpg");
 }
 .imgSec4{
 	background: url("../img/empleados.jpg");

@@ -26,8 +26,15 @@ h1{
 	position: sticky;
 	top:0px;
 	padding: 3px 30px;
+	background-color: white;
+	z-index: 100;
 }
 
 .nav-item a{
 	font-size: 1.3rem;
 }
+
+.navStyle{
+	padding-top: 20px;
+}
+

@@ -16,16 +16,6 @@ footer{
 	width: 100%;
 }
 
-.navStyle{
-	font-size: 18px;
-	padding-top: 20px;
-}
-
-.encabezado{
-	background-color: white;
-	z-index: 100;
-}
-
 .titulo h2{
 	font-family: 'Kanit', sans-serif;
 	font-size: 60px;
@@ -69,6 +59,7 @@ footer{
 
 .subTitulo h3{
 	font-family: 'Kanit', sans-serif;
+	text-align: center;
 }
 
 .center{
