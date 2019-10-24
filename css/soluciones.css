@@ -59,6 +59,8 @@ h2{margin: 1rem 1.5rem;}
 		margin-bottom: 4rem;
 		background: #EAEAEA;
 		box-shadow: 10px 10px 10px 0px #CDCDCD;
+		border-radius: 30px;
+		overflow: hidden;
 	}
 	.boxImg{
 		display: none;
