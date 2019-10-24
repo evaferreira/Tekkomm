@@ -24,3 +24,8 @@ h2{
 .center{
 	text-align: center;
 }
+
+.centerImg{
+	display: flex;
+	align-items: center;
+}
