@@ -23,47 +23,36 @@ h2{margin: 1rem 1.5rem;}
 
 .pLeft{padding: 0px 40px;}
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
 
-	.pLeft p{
-		font-size: 2rem;
-	}
-	h2{
-		font-size: 4rem;
-	}
-	
-}
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) {
+/* Small and Medium devices (landscape phones, 576px and tablets, 768px )*/
+@media (min-width: 576px) and (max-width: 991px) {
 	.pLeft p{
 		font-size: 1.2rem;
 	}
 	h2{
 		text-align: center;
 		font-size: 3rem;
-		padding: 1rem 0px;
+		padding: 3rem 0px;
 		margin: 0px auto;
 	}
 
 	.box{
-		width: 80%;
+		width: 100%;
 		padding-bottom: 4rem;
-		margin-left: auto;
-		margin-right: auto; 
 		margin-bottom: 4rem;
-		background: #EAEAEA;
-		box-shadow: 10px 10px 10px 0px #CDCDCD;
-		border-radius: 30px;
-		overflow: hidden;
 	}
 	.boxImg{
 		display: none;
 	}
 	.boxImg-Md{
-		width: 100%;
+		width: 90%;
 		background-size: cover;
 		height: 350px;
+	}
+	.pLeft{
+		width: 80%;
+		margin: 0px auto;
+		padding: 0px 0px;
 	}
 }
 
