@@ -23,8 +23,6 @@
 	</head>
 
 	<body>
-		<!-- <div class="fondo"></div>-->
-
 		<!-- Barra Inicial de la Pagina -->
 		<section class="container-fluid encabezado">
 			<div class="row">
@@ -66,37 +64,36 @@
 			<!-- Contenedor del Formulario-->
 			<div class="container d-flex justify-content-center">
 				<div class="w-75">
-						<form class="formulario">
-  							<div class="row justify-content-between m-3">
-    							<div class="col-6 p-0">
-      								<input type="text" placeholder="Nombres">
-    							</div>
-    							<div class="col-5 p-0">
-      								<input type="text" placeholder="Apellido">
-    							</div>
-  							</div>
-				
-							<div class="row m-3">
-  								<input type="email" id="exampleFormControlInput1" placeholder=	"name@example.com">
-							</div>
-	
-  							<div class="row justify-content-between m-3">
-    							<div class="col-5 p-0">
-      								<input type="text" placeholder="Telefono">
-    							</div>
-    							<div class="col-6 p-0">
-      								<input type="text" placeholder="Ciudad">
-    							</div>
-  							</div>
+					<form action="procesarForm.php" method="POST" class="formulario">
+  						<div class="row justify-content-between m-3">
+    						<div class="col-6 p-0">
+      							<input type="text" name="nombre" placeholder="Nombres" required>
+    						</div>
+    						<div class="col-5 p-0">
+      							<input type="text" name="apellido" placeholder="Apellido" required>
+    						</div>
+  						</div>				
+						<div class="row m-3">
+  							<input type="email" placeholder="name@example.com" name="mail" required>
+						</div>
+
+  						<div class="row justify-content-between m-3">
+    						<div class="col-5 p-0">
+      							<input type="text" placeholder="Telefono" name="tel" required>
+    						</div>
+    						<div class="col-6 p-0">
+     							<input type="text" placeholder="Ciudad" name="ciudad">
+   							</div>
+ 						</div>
+					 
+						<div class="row m-3">
+							<textarea id="campotexto" name="mensaje" placeholder="Ingrese Mensaje..." required></textarea>
+						</div>
 					
-							<div class="row m-3">
-								<textarea id="campotexto" placeholder="Ingrese Mensaje..."></textarea>	
-							</div>
-					
-							<div class="row justify-content-end m-3">
-								<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>	
-							</div>
-						</form>
+						<div class="row justify-content-end m-3">
+							<button type="submit" class="btn btn-primary my-1">Enviar Consulta</button>	
+						</div>
+					</form>					
 				</div>		
 			</div>
 		</section>
