@@ -10,7 +10,7 @@ h2{margin: 1rem 1.5rem;}
 
 .imgSec1{
 	background: url("../img/estructura.jpg");
-}
+} 
 .imgSec2{
 	background: url("../img/proteccion.jpg");
 }
@@ -27,7 +27,7 @@ h2{margin: 1rem 1.5rem;}
 /* Small and Medium devices (landscape phones, 576px and tablets, 768px )*/
 @media (min-width: 576px) and (max-width: 991px) {
 	.pLeft p{
-		font-size: 1.2rem;
+		font-size: 3rem;
 	}
 	h2{
 		text-align: center;
