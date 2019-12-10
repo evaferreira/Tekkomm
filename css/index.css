@@ -77,7 +77,3 @@
     .logoEmpresa img:hover {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
-
-@media (max-width: 991px) {
-  h1 {
-    font-size: 4rem; } }
