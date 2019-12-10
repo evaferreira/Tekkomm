@@ -48,6 +48,8 @@ h2 { margin: 1rem 1.5rem; }
 
 /* Small and Medium devices (landscape phones, 576px and tablets, 768px )*/
 @media screen and (max-width: 991px) { 
+	h1 { font-size: 5rem; }
+	
 	h2{
 		text-align: center;
 		font-size: 4rem;
@@ -75,7 +77,6 @@ h2 { margin: 1rem 1.5rem; }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	h1 { font-size: 6rem; }
 	
 	h2{ font-size: 2.5rem; }
 
