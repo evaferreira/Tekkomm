@@ -3,13 +3,13 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Tekkomm</title>
 		
-		<!-- FAVICON -->
+		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="icono/icono.png">
-
-		<!-- DEPENDECIAS DE BOOTSTRAP -->
+		
+		<!-- Dependencia de Boostrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 		
 		<!-- Dependencias FontAwesome -->
@@ -18,65 +18,66 @@
 		<!-- Dependencias de Animate of scroll(AOS)-->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/nav.css">
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/nav.css">
 	</head>
 
 	<body>
-		<section class="container-fluid encabezado">
-			<div class="row">
-				<!-- Logo de la Empresa -->
-				<div class="col-sm-12 col-md-6">
-					<a href="#" class="titulo">
-						<h1><span class="h1Color">Tek</span>komm</h1>
-					</a>	
-				</div>
+		<!-- Barra Inicial de la Pagina -->
+		<header class="container-fluid encabezado fixed">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a href="index.html" class="titulo">
+					<h1><span class="h1Color">Tek</span>komm</h1>
+				</a>
+								   
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+				</button>
 				
-				<!-- Barra de Navegacion de la Pagina Web -->
-				<div class="col-sm-12 col-md-6">
-					<ul class="nav justify-content-end navStyle">
-  						<li class="nav-item">
-  							<a class="nav-link" href="soluciones.html">Soluciones</a>
-  						</li>
-  						
-  						<li class="nav-item">
-  							<a class="nav-link" href="nosotros.html">Nosotros</a>
-  						</li>
-  						
-  						<li class="nav-item">
-  							<a class="nav-link" href="contacto.html">Contacto</a>
-  						</li>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav justify-content-end w-100">
+						<li class="nav-item">
+							  <a class="nav-link" href="soluciones.html">Soluciones</a>
+						</li>
+			
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Nosotros</a>
+							</li>
+		 
+						  <li class="nav-item">
+							   <a class="nav-link" href="contacto.php">Contacto</a>
+						   </li>
 					</ul>
 				</div>
-			</div>
-		</section>
+		  	</nav>
+		</header>
 		
 		<!-- PORTADA DE LA PAGINA WEB -->
 		<div class="portada">
-			<div class="container">
-				<h2>“Somos una empresa de tecnología que lo lleva a destino sin importar lo difícil que sea el camino.”</h2>	
+			<h2>“Somos una empresa de tecnología que lo lleva a destino sin importar lo difícil que sea el camino.”</h2>
+		</div>
+
+		<!-- Seccion de valores de la Empresa -->
+		<section class="container-fluid sec">
+			<div class="secTitulo mb-5">
+				<h2>Como Trabajamos y Pensamos?</h2>
 			</div>
-		</div>
 
-		<!-- Valores de la Empresa -->
-		<div class="m-5 d-flex justify-content-center">
-			<h2 class="subtitulo">Como Trabajamos y Pensamos?</h2>
-		</div>
-
-		<section class="container-fluid">
-			<div class="row justify-content-around m-5">
+			<div class="row justify-content-around">
 				<!-- Elemento 1 -->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-8 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1500">
 					<div class="row">
-						
 						<div class="col-12 d-flex justify-content-center icon">
 							<i class="fas fa-pencil-alt"></i>
 						</div>
 
-						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+						<div class="col-12 TituloElem">
 							<h3>Simple</h3>
 						</div>
-
+				
 						<div class="col-12 d-flex justify-content-center">
 							<p>Porque soluciones simples, de fácil operacion y mantenimiento ayudan a hacer crecer los negocios. Sin preocupaciones adicionales y rápida adaptación a los cambios continuos que se presentan en nuestros tiempos.</p>
 						</div>
@@ -84,32 +85,30 @@
 				</div>
 				
 				<!-- Elemento 2 -->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-8 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1500">
 					<div class="row">
-
 						<div class="col-12 d-flex justify-content-center icon">
 							<i class="fas fa-stopwatch"></i>
 						</div>
 
-						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+						<div class="col-12 TituloElem">
 							<h3>Exacto</h3>
 						</div>
 
-						<div class="col-12 d-flex justify-content-center p-2">
+						<div class="col-12 d-flex justify-content-center">
 							<p>Sólo lo necesario para que usted realice sus actividades sin preocupaciones y en forma eficiente, sin ninguna complicación adicional. Robusto, estable y amigable justo a medida de su negocio pero sin olvidarnos del futuro.</p>
 						</div>
 					</div>
 				</div>
 
 				<!-- Elemento 3-->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
-
-					<div class="col-12 d-flex justify-content-center icon">
-						<i class="fas fa-puzzle-piece"></i>
-					</div>
-
+				<div class="col-sm-8 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1500">
 					<div class="row">
-						<div class="col-12 d-flex justify-content-center subTitulo p-3">
+						<div class="col-12 d-flex justify-content-center icon">
+							<i class="fas fa-puzzle-piece"></i>
+						</div>
+
+						<div class="col-12 TituloElem">
 							<h3>Perfecto</h3>
 						</div>
 
@@ -122,18 +121,20 @@
 		</section>
 
 		<!-- Seccion de Servicios -->
-		<div style="background: #FAFAFA;">
-		<section class="container">
-			<div class="d-flex justify-content-center">
-				<h2 class="subtitulo">Nuestras Soluciones</h2>
+		<div style="background: #F8F8F8;">
+		<section class="container sec">
+			
+			<div class="secTitulo">
+				<h2>Nuestras Soluciones</h2>
 			</div>
 
-			<div class="row justify-content-around m-5">
+			<div class="row">
 				<!-- Elemento 1 -->
-				<div class="col-sm-12 col-lg-6 p-3" data-aos="fade-down-right" data-aos-duration="1000">
-					<div class="subTitulo p-3">
+				<div class="col-sm-12 col-lg-6 p-3">
+					<div class="TituloElem">
 						<h3>Comunicaicones</h3>
 					</div>
+
 					<div class="row">
 						<div class="col-3 d-flex justify-content-center iconServicio">
 							<i class="fas fa-fax"></i>
@@ -157,8 +158,8 @@
 				</div>
 				
 				<!-- Elemento 2 -->
-				<div class="col-sm-12 col-lg-6 p-3" data-aos="fade-down-left" data-aos-duration="1000">
-					<div class="subTitulo p-3">
+				<div class="col-sm-12 col-lg-6 p-3">
+					<div class="TituloElem">
 						<h3>Mejore las Red</h3>
 					</div>			
 					<div class="row">
@@ -181,8 +182,8 @@
 				</div>
 
 				<!-- Elemento 3-->
-				<div class="col-sm-12 col-lg-6 p-3" data-aos="fade-up-right" data-aos-duration="1000">
-					<div class="subTitulo p-3">
+				<div class="col-sm-12 col-lg-6 p-3">
+					<div class="TituloElem">
 						<h3>Protección</h3>
 					</div>
 					<div class="row">
@@ -199,8 +200,8 @@
 				</div>
 				
 				<!-- Elemento 4-->
-				<div class="col-sm-12 col-lg-6 p-3" data-aos="fade-up-left" data-aos-duration="1000">
-					<div class="subTitulo p-3">
+				<div class="col-sm-12 col-lg-6 p-3">
+					<div class="TituloElem">
 						<h3>Capacitaciones</h3>
 					</div>
 					<div class="row">
@@ -215,15 +216,14 @@
 						</div>
 					</div>
 				</div>
-
 			</div>	
 		</section>
 		</div>
 
 		<!-- Empresas con las cuales trabajamos -->
-		<section class="container">
-			<div class="m-5 d-flex justify-content-center">
-				<h2 class="subtitulo">Trabajamos con Ellos</h2>
+		<section class="container sec">
+			<div class="secTitulo">
+				<h2>Trabajamos con Ellos</h2>
 			</div>
 
 			<div class="row align-items-center">
@@ -256,12 +256,15 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<!-- JavaScript de Bootstrap-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		
+		<!-- Barra de Navegacion Dinamica -->
+		<script src="js/navDinamico.js"></script>
+
 		<!-- JV de Animate of Scroll -->
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script> AOS.init(); </script>

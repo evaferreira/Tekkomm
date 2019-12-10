@@ -1,0 +1,51 @@
+@import "variables";
+
+img {
+	width: 100%;
+}
+
+h2 {
+	font-size: 45px;
+	font-family: 'Kanit', sans-serif;
+	padding: 2rem 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.backGrey {
+	background: $backNosotros;
+	padding-bottom: 4rem;
+}
+
+.subTitulo h3 {
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.Imagen {
+	display: flex;
+	align-items: center;
+
+	@media screen and (max-width: 991px) {
+		margin-bottom: 2rem;
+	}
+}
+
+.Elem{
+	@media screen and (max-width: 991px) {
+		margin-bottom: 2rem;
+	}
+}
+
+
+@media (max-width: 991px){
+	p{ font-size: 2.5rem; }
+
+	h2 { font-size: 4rem; }
+
+	h3 { font-size: 3.5rem;}
+}

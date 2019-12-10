@@ -1,0 +1,80 @@
+
+@import "variables";
+
+body{
+	background-color: #FAFAFA;
+	z-index: -20;
+}
+
+.fondo{
+	background-image: url(../img/contacto3.jpg);
+	background-attachment: fixed;
+	z-index: -10;
+	width: 100%;
+}
+
+.titulo h2{
+	font-family: 'Kanit', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	justify-content: center;
+}
+
+.formulario input[type ="text"],
+.formulario input[type ="tel"],
+.formulario input[type ="email"]
+{
+	width: 100%;
+	height: 50px;
+	border: none;
+	padding-left: 15px;
+	background-color: $itemForm;/*#E6E6E6*/
+	border-radius: 5px;
+	outline: none;
+}
+	.formulario input[type ="text"]:hover,
+	.formulario input[type ="tel"]:hover,
+	.formulario input[type ="email"]:hover,
+	#campotexto:hover {
+		transform: scale(1.05);
+	}
+
+#campotexto{
+	width: 100%;
+	height: 100px;
+	border: none;	
+	padding: 10px 15px;
+	background-color: $itemForm;
+	border-radius: 5px;
+	height: 200px;
+	outline: none;
+	resize: none;
+}
+
+.icon{
+	font-size: 60px;
+	color: $azul;
+}
+
+.subTitulo h3{
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+}
+
+.center{
+	text-align: center;
+}
+
+.Elem{
+	@media screen and (max-width: 992px) {
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 991px){
+	p{ font-size: 2.5rem; }
+
+	h2 { font-size: 4rem; }
+
+	h3 { font-size: 3.5rem;}
+}

@@ -19,42 +19,45 @@
 	</head>
 
 	<body>
-	<!-- Barra Inicial de la Pagina -->
-		<section class="container-fluid encabezado">
-			<div class="row">
-				<!-- Logo de la Empresa -->
-				<div class="col-sm-12 col-md-6">
-					<a href="index.html" class="titulo">
-						<h1><span class="h1Color">Tek</span>komm</h1>
-					</a>	
-				</div>
+		<!-- Barra Inicial de la Pagina -->
+		<header class="container-fluid encabezado sticky">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a href="index.html" class="titulo">
+					<h1><span class="h1Color">Tek</span>komm</h1>
+				</a>
+								   
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+				</button>
 				
-				<!-- Barra de Navegacion de la Pagina Web -->
-				<div class="col-sm-12 col-md-6">
-					<ul class="nav justify-content-end navStyle">
-  						<li class="nav-item">
-  							<a class="nav-link" href="soluciones.html">Soluciones</a>
-  						</li>
-  						<li class="nav-item">
-  							<a class="nav-link" href="#">Nosotros</a></li>
-  						<li class="nav-item">
-  							<a class="nav-link" href="contacto.html">Contacto</a>
-  						</li>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav justify-content-end w-100">
+						<li class="nav-item">
+							  <a class="nav-link" href="soluciones.html">Soluciones</a>
+						</li>
+			
+						<li class="nav-item">
+							  <a class="nav-link" href="#">Nosotros</a>
+							</li>
+		 
+						  <li class="nav-item">
+							   <a class="nav-link" href="contacto.php">Contacto</a>
+						   </li>
 					</ul>
 				</div>
-			</div>
-		</section>
+		  	</nav>
+		</header>
 
 		<!-- Seccion 1 - Acerca de Nosotros-->
 		<section class="container-fluid backGrey">
 			<div class="container">
 				<h2>Acerca de nosotros</h2>
 				<div class="row">
-					<div class="col-sm-12 col-lg-7 centerImg">
+					<div class="col-sm-12 col-lg-6 Imagen">
 						<img src="img/nosotros.jpg" alt="">
 					</div>
 
-					<div class="col-sm-12 col-lg-5 p-2">
+					<div class="col-sm-12 col-lg-6 p-3">
 						<p>Brindamos servicios profesionales de telecomunicaciones, networking y seguridad informática, como el diseño, la consultoría, la auditoría, la implementación, y el soporte avanzado. Nos enfocamos en tecnologías de Datacenter, Seguridad, Traffic Management, Core y Wireless, trabajando con fabricantes como Cisco, Juniper, F5, Intel Security, Forcepoint, Radware, Brocade, Ruckus Wireless, Purple WiFi, Hewlett Packard Enterprise, etc.</p>		
 						<p>También brindamos soluciones, habitualmente llamadas llave en mano, que combinan servicios profesionales con la provisión de equipos.</p>
 						<p>Tenemos la experiencia combinada de una multinacional con la flexibilidad de una empresa pequeña.</p>
@@ -67,7 +70,7 @@
 		<section class="container-fluid">
 			<div class="row justify-content-around p-5">
 				<!-- Elemento 1 -->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-10 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">
 						<div class="col-12 subTitulo p-3">
 							<h3>Experiencia Internacional</h3>
@@ -80,7 +83,7 @@
 				</div>
 				
 				<!-- Elemento 2 -->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-10 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">	
 						<div class="col-12 subTitulo p-3">
 							<h3>Flexibilidad</h3>
@@ -93,7 +96,7 @@
 				</div>
 
 				<!-- Elemento 3-->
-				<div class="col-3" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-10 col-lg-3 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">					
 						<div class="col-12 subTitulo p-3">
 							<h3>Partners Tecnológicos</h3>

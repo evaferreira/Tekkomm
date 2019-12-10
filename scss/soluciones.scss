@@ -1,0 +1,144 @@
+
+@import "variables.scss";
+
+$anchoImg1: 40%;
+$anchoImg2: 60%;
+$anchoImg3: 50%;
+$anchoImg4: 60%;
+
+img { width: 100%; }
+
+h2 { margin: 1rem 1.5rem; }
+
+.encabezado {
+	background-color: white;
+	z-index: 10;
+}
+
+.imgSec1 {
+	background: url("../img/estructura.jpg");
+}
+.imgSec2 {
+	background: url("../img/proteccion.jpg");
+}
+.imgSec3 {
+	background: url("../img/mejoreRed.jpg");
+}
+.imgSec4 {
+	background: url("../img/empleados.jpg");
+}
+
+.pLeft { 
+	padding: 0px 40px;
+
+	@media screen and (max-width: 991px) {
+		
+		width: 80%;
+		margin: 0px auto;
+		padding: 0px 0px;
+		
+		p { font-size: 2.5rem; }	
+	}
+
+	@media (min-width: 992px) {
+		p { font-size: 1rem;  }
+	}
+}
+
+
+/* Small and Medium devices (landscape phones, 576px and tablets, 768px )*/
+@media screen and (max-width: 991px) { 
+	h2{
+		text-align: center;
+		font-size: 4rem;
+		font-weight: bold;
+		padding: 3rem 0px;
+		margin: 0px auto;
+	}
+
+	.box{
+		width: 100%;
+		padding-bottom: 4rem;
+		margin-bottom: 4rem;
+	}
+	.boxImg{
+		display: none;
+	}
+	.boxImg-Md{
+		width: 90%;
+		background-size: cover;
+		height: 350px;
+	}
+	
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	h2{
+		font-size: 2.5rem;
+	}
+
+
+	/*Definir el ancho de cada texto por separado*/
+	.box1 { width: 100% - $anchoImg1;}
+	.box2 { width: 100% - $anchoImg2;}
+	.box3 { width: 100% - $anchoImg3;}
+	.box4 { width: 100% - $anchoImg4;}
+
+	/*Definir el ancho de cada imagen por separado*/
+	.img1 { width: $anchoImg1; }
+	.img2 { width: $anchoImg2; }
+	.img3 { width: $anchoImg3; }
+	.img4 { width: $anchoImg4; }
+
+	/*Efecto de Inclinado Imagen Derecha*/
+	.box{
+		display: flex;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	.boxTextIzq, .boxTextDer{
+		position: relative;
+		z-index: 3;
+		background-color: $secSoluciones;
+	}
+	.boxTextIzq::after{
+		position: absolute;
+	    right: 0;
+	    height: 100%;
+	    background: $secSoluciones;
+    	transform: translate3d(0, 0, 0) skew(-10deg);
+    	top: 0;
+    	transform-origin: bottom;
+    	width: 100%;
+    	z-index: -1;
+	    content: " ";
+	}
+
+	.boxTextDer::after{
+		position: absolute;
+    	right: 0;
+    	height: 100%;
+    	background: $secSoluciones;
+    	transform: translate3d(0, 0, 0) skew(10deg);
+    	top: 0;
+    	transform-origin: bottom;
+    	width: 100%;
+    	z-index: -1;
+    	content: " ";
+	}
+
+	.boxImg-Lg{
+		background-size: cover;
+		z-index: 1;
+	
+		img { width: 100%; }
+	}
+
+	/*Clase Pantalla Mediana - Deshabilitado.*/
+	.boxImg-Md{
+		display: none;
+	}
+}
+

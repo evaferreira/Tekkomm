@@ -1,80 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px; }
 
-.portada{
-	background-image: url(../img/portada1.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	z-index: -10;
-	width: 100%;
-	height: 500px;
-	display: flex;
-	align-items: center;
-}
-.portada h2{
-	font-family: 'Kanit', sans-serif;
-	font-size: 3rem;
-	width: 100%;
-	align-items: center;
-	text-align: center;
-}
+.portada {
+  background-image: url(../img/portada1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .portada h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    width: 70%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto; }
 
+.sec {
+  padding-bottom: 3rem; }
+  .sec .secTitulo {
+    font-family: 'Kanit', sans-serif;
+    margin: 0px auto;
+    padding-top: 3rem; }
+    .sec .secTitulo h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold; }
+  @media screen and (max-width: 992px) {
+    .sec .Elem {
+      margin: 2rem 0px; } }
 
-.subTitulo h3{
-	font-family: 'Kanit', sans-serif;
-	font-size: 2.5rem;
-	text-align: center;
-}
+.TituloElem {
+  font-family: 'Kanit', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem auto; }
+  .TituloElem h3 {
+    font-weight: bolder; }
 
-.subtitulo{
-	font-size: 45px;
-	font-family: 'Kanit', sans-serif;
-	margin-top: 5rem; 
-}
+.icon {
+  font-size: 60px;
+  color: #2E86C1; }
 
+.iconServicio {
+  font-size: 60px;
+  color: #2E86C1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
+.EfectoSkew {
+  -webkit-transform: skew(-10deg);
+  -ms-transform: skew(-10deg);
+  transform: skew(-10deg);
+  background: #DADADA;
+  margin-bottom: 0.3rem; }
+  .EfectoSkew h4 {
+    text-align: center; }
 
-.icon{
-	font-size: 60px;
-	color: #2E86C1;
-
-}
-.iconServicio{
-	font-size: 60px;
-	color: #2E86C1;
-	align-items: center;
-}
-
-.EfectoSkew{
-	transform: skew(-10deg);
-	background: #DADADA;
-	margin-bottom: 0.3rem;
-}
-.EfectoSkew h4{
-	text-align: center;
-}
-
-
-
-.logoEmpresa{
-	text-align: center;
-}
-.logoEmpresa img{
-	width: 60%;
-	filter: grayscale(100%);
-}
-.logoEmpresa img:hover{
-	filter: grayscale(0%);
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-	.logoEmpresa{
-		margin: 1em auto;
-	}
-	.logoEmpresa img{
-		width: 80%;
-	}
-}
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-	
-}
+.logoEmpresa {
+  text-align: center;
+  margin: 1em auto; }
+  .logoEmpresa img {
+    width: 80%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .logoEmpresa img:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
