@@ -23,6 +23,10 @@
 		align-items: center;
 		text-align: center;
 		margin: 0px auto;
+
+		@media (max-width: 991px){
+			font-size: 2rem;
+		}
 	}
 }
 
@@ -81,6 +85,12 @@
 		text-align: center;
 	}
 	
+}
+
+.sec-empresas{
+	@media screen and (max-width:  991px){
+		display: none;
+	}
 }
 
 .logoEmpresa {
