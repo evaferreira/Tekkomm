@@ -25,9 +25,6 @@ h1 {
   padding: 3px 30px;
   z-index: 100; }
 
-.fixed {
-  position: fixed; }
-
 .sticky {
   position: -webkit-sticky;
   position: sticky;
