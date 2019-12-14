@@ -40,7 +40,7 @@
       font-weight: bold; }
   @media screen and (max-width: 992px) {
     .sec .Elem {
-      margin: 2rem 0px; } }
+      margin: 2rem 0.5rem; } }
 
 .TituloElem {
   font-family: 'Kanit', sans-serif;
