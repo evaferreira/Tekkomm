@@ -138,7 +138,7 @@
 		<section class="container-fluid">
 			<div class="row justify-content-around p-5 m-5">
 				<!-- Elemento 1 -->
-				<div class="col-sm-12 col-md-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-12 col-lg-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center icon">
 							<i class="fas fa-globe-americas"></i>
@@ -159,7 +159,7 @@
 				</div>
 				
 				<!-- Elemento 2 -->
-				<div class="col-sm-12 col-md-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-12 col-lg-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center icon">
 							<i class="fas fa-phone-alt"></i>
@@ -180,7 +180,7 @@
 				</div>
 
 				<!-- Elemento 3-->
-				<div class="col-sm-12 col-md-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
+				<div class="col-sm-12 col-lg-3 p-2 Elem" data-aos="zoom-in" data-aos-duration="1000">
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center icon">
 							<i class="fas fa-envelope-open-text"></i>	
