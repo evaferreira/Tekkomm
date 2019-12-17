@@ -8,6 +8,7 @@ body{
 
 .fondo{
 	background-image: url(../img/contacto3.jpg);
+	background-size: cover;
 	background-attachment: fixed;
 	z-index: -10;
 	width: 100%;
@@ -65,12 +66,9 @@ body{
 	text-align: center;
 }
 
-.Elem{
-	@media screen and (max-width: 992px) {
-		margin-bottom: 2rem;
-	}
-}
+.w-form { width: 75%; }
 
+// Estilo hasta pantallas medianas
 @media (max-width: 991px){
 	p { font-size: 1rem; }
 
@@ -78,5 +76,9 @@ body{
 
 	h2 { font-size: 2rem; }
 
-	h3 { font-size: 1.5rem;}
+	h3 { font-size: 1.5rem; }
+
+	.Elem{ margin-bottom: 2rem; }
+
+	.w-form { width: 100%; }
 }

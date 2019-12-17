@@ -24,9 +24,6 @@
     align-items: center;
     text-align: center;
     margin: 0px auto; }
-    @media (max-width: 991px) {
-      .portada h2 {
-        font-size: 2rem; } }
 
 .sec {
   padding-bottom: 3rem; }
@@ -38,9 +35,6 @@
       text-align: center;
       font-size: 2.5rem;
       font-weight: bold; }
-  @media screen and (max-width: 992px) {
-    .sec .Elem {
-      margin: 2rem 0.5rem; } }
 
 .TituloElem {
   font-family: 'Kanit', sans-serif;
@@ -70,10 +64,6 @@
   .EfectoSkew h4 {
     text-align: center; }
 
-@media screen and (max-width: 991px) {
-  .sec-empresas {
-    display: none; } }
-
 .logoEmpresa {
   text-align: center;
   margin: 1em auto; }
@@ -87,4 +77,10 @@
 
 @media (max-width: 991px) {
   h1 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 2rem; }
+  .sec-empresas {
+    display: none; }
+  .Elem {
+    margin: 2rem 0.5rem; } }

@@ -1,8 +1,6 @@
 @import "variables";
 
-img {
-	width: 100%;
-}
+img { width: 100%; }
 
 h2 {
 	font-size: 45px;
@@ -29,25 +27,17 @@ h2 {
 .Imagen {
 	display: flex;
 	align-items: center;
-
-	@media screen and (max-width: 991px) {
-		margin-bottom: 2rem;
-	}
-}
-
-.Elem{
-	@media screen and (max-width: 991px) {
-		margin-bottom: 2rem;
-	}
 }
 
 
-@media (max-width: 991px){
+@media (max-width: 992px)
+{
 	p { font-size: 1rem; }
 
 	h1 { font-size: 2.5rem; }
-
 	h2 { font-size: 2rem; }
-
 	h3 { font-size: 1.5rem; }
+
+	.Elem { margin-bottom: 2rem; }
+	.Imgen { margin-bottom: 2rem; }
 }

@@ -63,7 +63,7 @@
 			
 			<!-- Contenedor del Formulario-->
 			<div class="container d-flex justify-content-center">
-				<div class="w-75">
+				<div class="w-form">
 					<!-- Posibles errores que pueda tener el formulario -->
 					<div class="ml-3 mr-3 mb-4">
 						<?php

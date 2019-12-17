@@ -7,10 +7,8 @@ a {
   color: black; }
 
 h1 {
+  font-size: 60px;
   font-family: 'Kanit', sans-serif; }
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 60px; } }
 
 .titulo:hover {
   text-decoration: none;

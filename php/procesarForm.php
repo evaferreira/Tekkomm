@@ -3,6 +3,7 @@
 	$apellido = $_POST["apellido"];
 	$email = $_POST["mail"];
 	$tel = $_POST["tel"];
+	$ciudad = $_POST["ciudad"];
 	$mensaje = $_POST["mensaje"]; 
 
 	// Eliminamos espacio en blanco del inicio y el final de la cadena.
@@ -10,6 +11,7 @@
 	$apellido = trim ($apellido);
 	$email = trim ($email);
 	$tel = trim ($tel);
+	$ciudad = trim ($ciudad);
 	$mensaje = trim ($mensaje); 
 
 	// Error que no se ingreso email.
@@ -30,10 +32,23 @@
 	else
 	{
 		// ENVIAMOS UN MAIL CON EL CONTENIDO DE LA CONSULTA.
+		$mail_body = '<html><body>';		
+		$mail_body .= $mensaje;
+		$mail_body .= '<br>';
+		$mail_body .= '<h3>Datos Personales:</h3>';
+		$mail_body .= '<strong>Nombre: </strong><spam>'.$Name.'</spam> <spam> '.$apellido.'</spam>';
+		$mail_body .= '<br>';
+		$mail_body .= '<strong>Email: </strong><spam>'.$email.'</spam>';
+		$mail_body .= '<br>';
+		$mail_body .= '<strong>Ciudad: </strong><spam>'.$ciudad.'</spam>';
+
 		$recipient = "nicolas.m.giudice@gmail.com"; //recipient
-		$mail_body = $_POST["mensaje"]; //mail body
 		$subject = "Consulta desde la Pagina Web"; //subject
-		$header = "From: ". $Name . " <" . $email . ">\r\n"; //optional headerfields
+
+		// Encabezado para enviar mails con formato HTML.
+		$header  = "MIME-Version: 1.0" . "\r\n";
+		$header .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+		$header .= "From: $Name <$email>";
 
 		mail($recipient, $subject, $mail_body, $header);
 		
@@ -44,7 +59,7 @@
 		if ($enlace == NULL)
 		{
 			// quiero mandar aca un mensaje a nosotros mismos avisando que hay problema de base de datos.
-			$mail_body = "Ocurrio alguna falla en el servidor y no se puede conectar."; //mail body
+			$mail_body = "Ocurrio alguna falla en el servidor y no se puede conectar."; //mail body	
 			$subject = "Falla en el Servidor"; //subject
 			$header = "From: Pagina Tekkomm\r\n"; //optional headerfields
 			
@@ -52,7 +67,7 @@
 		}
 
 		// Agrego los datos a la base de datos.
-		$consulta = "INSERT INTO clientes VALUES (0,'$nombre', '$apellido', '$email', '$tel')";
+		$consulta = "INSERT INTO contactos_web VALUES (0,'$nombre', '$apellido', '$email', '$tel', '$ciudad')";
 
 		mysqli_query($enlace, $consulta);
 

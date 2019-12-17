@@ -29,7 +29,6 @@ h2 {
       margin: 0px auto;
       padding: 0px 0px; } }
 
-/* Small and Medium devices (landscape phones, 576px and tablets, 768px )*/
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 2.5rem; }
@@ -50,7 +49,7 @@ h2 {
     background-size: cover;
     height: 350px; } }
 
-/*Large devices (desktops, 992px and up)*/
+/*Estilos para pantallas largas y mas grandes.*/
 @media (min-width: 992px) {
   h2 {
     font-size: 2.5rem; }
@@ -114,8 +113,6 @@ h2 {
   .boxImg-Lg {
     background-size: cover;
     z-index: 1; }
-    .boxImg-Lg img {
-      width: 100%; }
   /*Clase Pantalla Mediana - Deshabilitado.*/
   .boxImg-Md {
     display: none; } }
