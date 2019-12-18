@@ -15,7 +15,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .portada h2 {
+  .portada h1 {
     font-family: 'Kanit', sans-serif;
     font-size: 3rem;
     width: 70%;
@@ -35,6 +35,9 @@
       text-align: center;
       font-size: 2.5rem;
       font-weight: bold; }
+
+.sec2backColor {
+  background-color: #F8F8F8; }
 
 .TituloElem {
   font-family: 'Kanit', sans-serif;
@@ -76,9 +79,9 @@
       filter: grayscale(0%); }
 
 @media (max-width: 991px) {
-  h1 {
+  .titulo {
     font-size: 2.5rem; }
-  h2 {
+  h1, h2 {
     font-size: 2rem; }
   .sec-empresas {
     display: none; }

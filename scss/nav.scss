@@ -11,14 +11,14 @@ a {
 	color: black;
 }
 
-h1 {
+.titulo {
 	font-size: 60px;
 	font-family: 'Kanit', sans-serif;
-}
 
-.titulo:hover {
-	text-decoration: none;
-	color: black;
+	&:hover {
+		text-decoration: none;
+		color: rgb(29, 23, 23);
+	}
 }
 
 .h1Color {

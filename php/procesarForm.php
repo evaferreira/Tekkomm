@@ -65,11 +65,11 @@
 			
 			mail($recipient, $subject, $mail_body, $header);
 		}
-
-		// Agrego los datos a la base de datos.
-		$consulta = "INSERT INTO contactos_web VALUES (0,'$nombre', '$apellido', '$email', '$tel', '$ciudad')";
-
-		mysqli_query($enlace, $consulta);
+		else{
+			// Agrego los datos a la base de datos.
+			$consulta = "INSERT INTO contactos_web VALUES (0,'$Name', '$apellido', '$email', $tel, '$ciudad')";
+			mysqli_query($enlace, $consulta);
+		}
 
 		header ("location: ../contacto.php?error=0");
 	}

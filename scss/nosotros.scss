@@ -2,7 +2,7 @@
 
 img { width: 100%; }
 
-h2 {
+h1, h2 {
 	font-size: 45px;
 	font-family: 'Kanit', sans-serif;
 	padding: 2rem 0px;
@@ -34,8 +34,8 @@ h2 {
 {
 	p { font-size: 1rem; }
 
-	h1 { font-size: 2.5rem; }
-	h2 { font-size: 2rem; }
+	.titulo { font-size: 2.5rem; }
+	h1, h2 { font-size: 2rem; }
 	h3 { font-size: 1.5rem; }
 
 	.Elem { margin-bottom: 2rem; }

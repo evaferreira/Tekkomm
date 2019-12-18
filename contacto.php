@@ -27,7 +27,7 @@
 		<header class="container-fluid encabezado sticky">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<a href="index.html" class="titulo">
-					<h1><span class="h1Color">Tek</span>komm</h1>
+					<span class="h1Color">Tek</span>komm
 				</a>
 								   
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
 			<!-- Titulo de la seccion-->
 			<div class="container p-5">
 				<div class="d-flex justify-content-center titulo">
-					<h2>PÓNGASE EN CONTACTO</h2>
+					<h1>PÓNGASE EN CONTACTO</h1>
 				</div>
 			</div>
 			
