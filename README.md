@@ -1,4 +1,4 @@
-Pautas opcionales aplicas:
+# Pautas opcionales aplicadas:
 
 * Favicon del sitio web en todas las páginas.
 * Desarrollo en PHP.
